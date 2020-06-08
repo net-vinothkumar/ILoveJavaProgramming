@@ -32,9 +32,8 @@ public class SumOfArrayElements {
     }
 
     private static void sumOfArrayElementsUsingMap(List<Integer> numbers) {
-
         Integer result = numbers.stream()
-                .mapToInt(Integer::intValue)
+                .mapToInt(Integer::intValue)// Stream<Integer> -> IntStream
                 .sum();
 
         System.out.println("Sum of array elements using sum() = " + result);
