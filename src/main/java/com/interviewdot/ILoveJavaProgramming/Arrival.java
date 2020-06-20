@@ -8,16 +8,16 @@ public class Arrival {
     public static void main(String[] args) {
         //frequency();
         //countCharacters();
-        //palindrome();
+        palindrome();
         //maxOccuringCharacter();
         //duplicateWordsInAString();
-        //longestPrefix();
+//        longestPrefix();
         //removeDuplicates();
         //removeElement();
         //reverseArray();
         //isNumber();
         //swapTwoNumbers();
-        isPalindromeNumber();
+//        isPalindromeNumber();
     }
 
     private static void isPalindromeNumber() {
@@ -97,11 +97,11 @@ public class Arrival {
     }
 
     private static void longestPrefix() {
-        String[] input = new String[]{"flow", "flowing", "flower"};
-        String prefix = input[0];
+        String[] words = new String[]{"flowing", "flow", "flower"};
+        String prefix = words[0];
 
-        for (int i = 0; i < input.length; i++) {
-            while (input[i].indexOf(prefix) != 0) {
+        for (String word : words) {
+            while (word.indexOf(prefix) != 0) {
                 prefix = prefix.substring(0, prefix.length() - 1);
             }
         }
