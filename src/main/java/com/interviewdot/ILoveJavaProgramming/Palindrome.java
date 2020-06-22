@@ -4,14 +4,14 @@ import java.util.stream.IntStream;
 
 public class Palindrome {
     public static void main(String[] args) {
-        String input = "Madam";
+        String input = "Apple";
         isPalindrome(input.toLowerCase());
         isPalindromeUsingStream(input.toLowerCase());
     }
 
     private static void isPalindrome(String input) {
         boolean isPalindrome = true;
-        for (int i = 0; i < input.length() / 2; i++) {
+        for (int i = 0; i < input.length() / 2; i++) { // SPLIT 'm' 'a' 'd' 'a' 'm'
             if (input.charAt(i) != input.charAt(input.length() - i - 1)) {
                 isPalindrome = false;
                 break;
