@@ -4,8 +4,9 @@ import java.util.regex.Pattern;
 
 public class CountSubstrings {
     public static void main(String[] args) {
-        String substring = "Java";
+        String substring = "Kotlin";
         String source = "I Love Java Java Java Java And Java Programming";
+        //String source = "I Love ; ; ; ; And ; Programming";
 
         countNumberOfSubstrings(source, substring);
     }
