@@ -15,30 +15,30 @@ public class CharacterCount {
     }
 
     private static void findCharacterCountUsingFilter(String words, char character) {
-        long count = words.chars()
-                .filter(x -> x == character)
+        long count = words.chars() // "I will learn kotlin programming very fast"
+                .filter(x -> x == character) // 'a'
                 .count();
         displayResult(words, character, count);
     }
 
     private static void findCharacterCountUsingFrequency(String words, char character) {
         int count = Collections.frequency(
-                asList(words.split("")),
-                "" + character
+                asList(words.split("")), // List Of Characters
+                "" + character // 'a'
         );
 
         displayResult(words, character, count);
     }
 
     private static void findCharacterCountUsingMap(String words, char character) {
-        long count = words.chars()
+        long count = words.chars() // int
                 .mapToObj(c -> (char) c)
-                .filter(x -> x == character)
+                .filter(x -> x == character) // 'a'
                 .count();
         displayResult(words, character, count);
     }
 
     private static void displayResult(String words, char character, long count) {
-        System.out.println("'" + character + "'" + " appears " + count + " times in '" + words + "'");
+        System.out.println("'" + character + "'" + " appears " + count + " times in '" + words+ "'");
     }
 }
