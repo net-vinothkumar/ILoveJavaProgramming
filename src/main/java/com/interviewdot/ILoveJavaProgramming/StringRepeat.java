@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StringRepeat {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Apple  Apple  Apple  Apple  Apple  Apple  Apple  Apple  Apple  Apple
         String word = " Apple ";
         int times = 10;
 
@@ -25,7 +25,10 @@ public class StringRepeat {
     }
 
     private static void repeatUsingGenerate(String word, int times) {
-        String result = Stream.generate(word::toString).limit(times).collect(Collectors.joining());
+        String result = Stream
+                .generate(word::toString)           // Generate
+                .limit(times)                       // How many times ?
+                .collect(Collectors.joining());     // Join
         System.out.println(result);
     }
 }
