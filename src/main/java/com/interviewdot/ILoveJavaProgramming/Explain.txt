@@ -1,0 +1,15 @@
+filter() , count()
+
+"Find the number of UpperCase, LowerCase, Digits, SpecialCharacters"
+
+
+"*'&$ABCDEabcde1234578"
+
+Result :
+--------
+
+Upper Case = 5
+Lower Case = 5
+numbers = 7
+Special Characters = 4
+
